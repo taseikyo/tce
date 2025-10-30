@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "TCE",
+  "version": "0.0.1",
+  "description": "TCE: taseikyo's Chrome Extensions",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "copy_link_and_title": {
+      "suggested_key": { "default": "Ctrl+Shift+C" },
+      "description": "复制网页链接+标题"
+    },
+    "copy_bilibili_author": {
+      "suggested_key": { "default": "Ctrl+Shift+B" },
+      "description": "复制Bilibili作者名"
+    },
+    "copy_douyin_body": {
+      "suggested_key": { "default": "Ctrl+Shift+D" },
+      "description": "复制Douyin正文"
+    }
+  },
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "icons": { "128": "image/icon.png" }
+}

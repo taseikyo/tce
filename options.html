@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TCE 设置</title>
+    <style>
+      body { font-family: sans-serif; padding: 20px; }
+      label { display: block; margin-top: 10px; font-weight: bold; }
+      input[type=text], textarea { width: 400px; margin-top: 4px; padding: 5px; }
+      textarea { height: 60px; }
+      button { margin-top: 15px; padding: 6px 12px; cursor: pointer; }
+      .desc { color: gray; font-size: 0.9em; }
+      #status { color: green; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <h2>TCE 设置</h2>
+
+    <label for="formatTemplate">复制网页链接+标题模板：</label>
+    <textarea id="formatTemplate" placeholder="- ${link}\n- ${title}"></textarea>
+    <div class="desc">
+      支持变量：<code>${link}</code> → 链接，<code>${title}</code> → 标题
+    </div>
+
+    <label for="bilibiliSelector">Bilibili 作者选择器：</label>
+    <input id="bilibiliSelector" type="text" placeholder=".author" />
+    <div class="desc">示例：.up-name, .header-author</div>
+
+    <label for="douyinSelector">Douyin 正文选择器：</label>
+    <input id="douyinSelector" type="text" placeholder=".body" />
+    <div class="desc">示例：.desc, .content</div>
+
+    <button id="saveBtn">保存设置</button>
+    <div id="status"></div>
+
+    <script src="js/options.js"></script>
+  </body>
+</html>
