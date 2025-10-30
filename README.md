@@ -18,9 +18,9 @@ tce: taseikyo's chrome extensions
 
 | 动作 | 快捷键 |
 |---|---|
-| 复制网页标题+链接 | Alt+C |
-| 复制Bilibili作者名+链接 | Alt+B |
-| 复制Douyin标题+链接 | Alt+D |
+| 复制网页标题+链接 | Alt+1 |
+| 复制Bilibili作者名+链接 | Alt+2 |
+| 复制Douyin标题+链接 | Alt+3 |
 
 ## License
 
