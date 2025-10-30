@@ -66,7 +66,12 @@ async function copyDouyinTitleAndLink(tabId, selector) {
       const els = document.querySelectorAll(sel);
       console.log("get elements:", els);
       if (els.length < 1) return "";
-      const el = els[0];
+      // 首次加载至于两个，后续会有三个
+      // 首次加载的时候，当前播放的页面就是第一个；而后续就是第二个
+      let el = els[0];
+      if (els.length > 2) {
+        el = els[1];
+      }
       if (!el) return "";
       const awemeID = el.parentElement.parentNode.attributes["data-e2e-aweme-id"].value;
       const link = `https://www.douyin.com/video/${awemeID}`;
