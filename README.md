@@ -14,6 +14,14 @@ tce: taseikyo's chrome extensions
 
 安装完之后右键会出现一个猫猫头菜单，里面就是增强的功能了。
 
+## 快捷键
+
+| 动作 | 快捷键 |
+|---|---|
+| 复制网页标题+链接 | Alt+C |
+| 复制Bilibili作者名+链接 | Alt+B |
+| 复制Douyin标题+链接 | Alt+D |
+
 ## License
 
 Copyright (c) 2025 Lewis Tian. Licensed under the MIT license.

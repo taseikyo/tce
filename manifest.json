@@ -18,16 +18,16 @@
   "options_page": "options.html",
   "commands": {
     "copy_link_and_title": {
-      "suggested_key": { "default": "Ctrl+Shift+C" },
-      "description": "复制网页链接+标题"
+      "suggested_key": { "default": "Alt+C" },
+      "description": "复制网页标题+链接"
     },
     "copy_bilibili_author": {
-      "suggested_key": { "default": "Ctrl+Shift+B" },
-      "description": "复制Bilibili作者名"
+      "suggested_key": { "default": "Alt+B" },
+      "description": "复制Bilibili作者名+链接"
     },
     "copy_douyin_body": {
-      "suggested_key": { "default": "Ctrl+Shift+D" },
-      "description": "复制Douyin正文"
+      "suggested_key": { "default": "Alt+D" },
+      "description": "复制Douyin标题+链接"
     }
   },
   "host_permissions": ["https://*/*", "http://*/*"],
